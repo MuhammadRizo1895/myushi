@@ -1,0 +1,665 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
+/* ======= contact ========= */
+.contact{
+    border:none;
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+ .container{
+    width: 80%;
+    margin: 0px auto;
+}
+.container .contact-item{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.contact-item .contactes{
+    margin-left: 40px;
+}
+.cont-link .fas{
+    color: #48C636;
+    font-weight: 900;
+}
+.contact-item .call-btn{
+    margin-left: 40px;
+    background-color: #fff;
+    border: solid 2px #48C636;
+    color: #48C636;
+    padding: 1px 6px;
+    display: inline-block;
+    border-radius: 6px;
+    width: 169px;
+    height: 37px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor:pointer;
+
+}
+
+/* ========= navbar ========== */
+
+.navbar .nav-box{
+    width: 80%;
+    margin: 0 auto;
+}
+.navbar-item{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-link{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+.navbar-link a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 550;
+    line-height: 50px;
+}
+.navbar-link a img{
+    margin-right: 10px;
+}
+.navbar-link:hover{
+    background-color: #84C604;
+}
+
+/* ===== section-sushi ====== */
+
+.sushi{
+    width: 100%;
+    height: 680px;
+    background-image: url("img/sushi.png");
+    background-repeat: no-repeat;
+    background-size: 100% 680px;
+    position: relative;
+}
+.sushi::after{
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url("img/triangle-right.png");
+    background-repeat: no-repeat;
+    background-size: 10px auto ;
+    background-position: center;
+    background-color: #120D16;
+    right: 50px;
+    bottom: 50%;
+}
+.sushi::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url("img/triangle-left.png");
+    background-repeat: no-repeat;
+    background-size: 10px auto ;
+    background-position: center;
+    background-color: #120D16;
+    left: 50px;
+    bottom: 50%;
+}
+.sushi .container{
+    padding: 0px 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+.sushi-content{
+    max-width: 700px;
+    padding-top: 40px;
+    padding-bottom: 150px;
+    position: relative;
+}
+.sushi-content:after{
+    position: absolute;
+    content: "скидка 15%";
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 141px;
+    height: 141px;
+    top: 70px;
+    right: 0px;
+    font-size: 28.78px;
+    font-weight: bold;
+    text-align: center;
+}
+.sushi-text{
+    margin-top: 30px;
+    font-size: 28px;
+    font-family: italic;
+    color: #fff;
+}
+.sushi-btn{
+    background-color: #FD4F10;
+    display:inline-block;
+    width: 246px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor:pointer;
+
+}
+.sushi-btn:hover{
+    color: #FD4F10;
+    border: solid 1px #FD4F10;
+    background-color: transparent;
+}
+.sushi-carusel{
+    position: absolute;
+    bottom: 50px;
+    right: 45%;
+    display: flex;
+    align-items: center;
+}
+.sushi-carusel span{
+    width: 10px;
+    height: 10px;
+    border: solid 0.5px white ;
+    border-radius: 5px;
+    margin-left: 10px;
+    transform: translateX(50%);
+}
+.sushi-carusel .active{
+    background-color: #84C604;
+    border: solid 0.5px #84C604;
+}
+/* ========= section-set ========== */
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.category-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.category-items .category-card{
+    width: 263px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 30%);
+    border-radius: 10px;
+    margin-left: 15px;
+    position: relative;
+}
+.card-xit::after{
+    position: absolute;
+    content: "XIT";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    background-color: #FD4F10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:3%;
+    right: 5%;
+}
+.category-card .card-info{
+    padding: 20px;
+}
+.category-card .card-info .card-num{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    margin: 10px;
+}
+.category-card .card-info .card-value{
+    font-size: 12px;
+    line-height: 20px;
+}
+.card-info .card-cost{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-info .card-cost .card-cost-info{
+    font-family: 'Roboto Slab' , 'Arial' , sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 28.43px;
+}
+.card-info .card-cost .card-schot{
+    font-size: 14px;
+    line-height: 28.43px;
+    position: relative;
+}
+.card-schot::after{
+    position: absolute;
+    content: '-';
+    border: solid 1px grey;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5px;
+    left: -25px;
+}
+.card-schot::before{
+    position: absolute;
+    content: '+';
+    border: solid 1px grey;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5px;
+    left: 15px;
+}
+.card-info .card-btn{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 28px;
+    margin: 20px auto;
+    width: 193px;
+    height: 41px;
+    font-weight: 600;
+    background-color: #FD4F10;
+    color: white;
+    text-transform: uppercase;
+}
+.carusel__item--category{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   margin: 40px auto; 
+}
+.carusel__item--span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: grey;
+    margin-left: 10px;
+}
+.carusel__item--category .active{
+    background-color: #84C604;
+}
+.carusel__item--category::after{
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 20px;
+    background-image: url("img/right-arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 180px;
+}
+.carusel__item--category::before{
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 20px;
+    background-image: url("img/left.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 180px;
+}
+
+
+/* ============== section rolli ================ */
+
+.card-active::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("img/fire.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    color: white;
+    background-color: #FD4F10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:3%;
+    right: 5%;
+}
+/* ======== wok =========== */
+
+
+.card-wok-cost .card-cost{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-wok-cost .card-cost label{
+    font-size: 14px;
+    line-height: 28px;
+}
+.card-wok-cost .card-cost-btn{
+    background-color: #FD4F10;
+    border: none;
+    color: white;
+    padding:2px 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+.card-cost #num{
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.card-info .card-wok-cost .card-cost-info{
+    font-family: 'Roboto Slab' , 'Arial' , sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 28.43px;
+}
+.card-info .card-wok-cost .card-schot{
+    font-size: 14px;
+    line-height: 28.43px;
+    position: relative;
+}
+.card-wok-info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* ======category-sushi ======== */
+.category-sushi{
+    background-image: url("img/sushi-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+}
+.category-sushi .container{
+    width: 80%;
+    margin: 0px auto;
+}
+.category-sushi .container .cat-list{
+   display: flex;
+   align-items: center; 
+}
+.cat-list li a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 28.43px;
+    font-weight: 600;
+    color: #999999;
+    margin-right: 70px;
+}
+.category-sushi .category-items .img-box{
+    height: 40%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+.category-sushi .category-items .img-box::before{
+    content:"new";
+    position:absolute;
+    top: 18px;
+    left: 18px;
+    font-family: 'Roboto Slab' , 'Arial' , sans-serif;
+    font-size: 16px;
+    line-height: 14.2px;
+    font-weight: bold;
+    color: #fff;
+    transform: rotateZ(-45deg);
+}
+.category-sushi .category-items .category-card{
+    padding: 0px;
+}
+.category-sushi .category-items .sushi-img{
+    width: 100%;
+    height: 226px;
+    border-radius: 5px;
+}
+/* =====category-sale ======== */
+.category-sale .container{
+    width: 70%;
+    margin: 0px auto;
+}
+.category-sale .container .sale-items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+.category-sale .container .sale-items .sale-box{
+    width: 18%;
+    height: 340px;
+    text-align: center;
+}
+.sale-box .sale-text{
+    font-size: 16px;
+    line-height: 28.43px;
+    color: #4D4D4D;
+    margin-top: 30px;
+}
+/*======= category-otziv =========== */
+.category-otziv .container{
+    width: 80%;
+    margin: 0px auto;
+}
+.category-otziv .container .users{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.user-card{
+    width: 30%;
+    height: 600px;
+    border: 1px solid black;
+    padding: 20px 20px;
+
+}
+.user-card .user-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+.user-card .user-info::before{
+    position: absolute;
+    content: '';
+    background-image: url("img/girl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 10px;
+}
+.user-info div{
+   margin-top: 15px;
+   margin-left: 30%;
+}
+
+.user-info .user-name{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 28.43px;
+    color: #5E81A7;
+}
+.user-info .use-date{
+    line-height: 28.43px;
+    font-size: 13px;
+    color: #999999;
+    font-weight: 600;
+}
+.user-card .user-commet{
+    width: 200px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Open Sans' , 'Arial' , sans-serif;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.user-card img{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/* ===== question ========= */
+
+.question{
+    padding: 20px 10px;
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+    background-image: url("img/black-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.question p{
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    margin: 0;
+    font-family: 'Open Sans' , 'Arial' , sans-serif;
+}
+.question .question-contact{
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+}
+.question-contact form{
+    margin-top: 30px;
+}
+.question-contact form input{
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: inherit;
+    color: #fff;
+}
+.question-contact form .send-btn{
+    color: #fff;
+    background-color: #FD4F10;
+    padding: 15px 30px;
+    border: none;
+    margin-left: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.question-contact .question-intro{
+    font-size: 12px;
+    line-height: 30.1px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+/* ==== category-company */
+.category-company .company-intro{
+    position: relative;
+    padding-bottom: 50px;
+}
+.category-company .company-intro p{
+    margin: 0;
+    padding-right: 300px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4D4D4D;
+    padding-top: 10px;
+}
+.category-company .company-intro::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 277px;
+    height: 478px;
+    background-image: url("img/company_img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* ===== footer ====*/
+.footer{
+    margin-top: 60px;
+    width: 100%;
+    background-color: #1A2D34;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.footer .container, .foot-info{
+    max-width: 80%;
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-family: 'Open Sans' , 'Arial' , sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer .container .foot-list li a{
+    font-size: 12px;
+    line-height: 24px;
+    color: #6B96A5;
+    text-decoration: none;
+}
+.footer .container  .white-list li a{
+    color: #fff;
+}
+.footer .container .foot-list li .active{
+    color: white;
+}
+.footer .foot-info a{
+    color: #6B96A5;
+    margin-left: -300px;
+}
